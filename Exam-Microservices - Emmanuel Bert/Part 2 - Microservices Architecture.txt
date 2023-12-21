@@ -1,0 +1,68 @@
+Q1 : Define what is a Microservices architecture and how does it defer
+	from a Monolithic application.
+
+		- A Microservices architecture is a set of services working 
+		  independantly, where each one does a task and all of them 
+		  are linked by interfaces like API for example. Whereas the 
+		  monolithic architecture where all the tasks are managed 
+		  on the same entity.
+
+Q2 : Compare Microservices and Monolithic architectures by listing their 
+	respective pros and cons.
+
+		- Microservices architecture :
+			- Pros : scalable, flexible, independant deployement,
+				maintained easily and inclusion of new 
+				technologies
+			- Cons : Complex managment, need to get well managed
+				communication between services
+
+		- Monolithic architecture :
+			- Pros : easy to develop, to maintain, to test and 
+				to deploy.
+			- Cons : hard to scale, a same deployment for all the
+				application, hard to implement new technologies.
+
+Q3 : In a Microservices architecture, explain how should the application be 
+	split and why.
+
+		The application should be devided according to the different
+		features or domain in order to make easier independancies
+		of the services. It allow to reduce the complexity and improve
+		the ease to up it to date and its scalability.
+
+Q4 : Briefly, explain the CAP theorem and its relevance to distributed systems
+	and Microservices.
+
+		According to the CAP theorem, a deployed system cannot 
+		simultaneously deals with the consistency, the availability and
+		the partition tolerance. For microservices, developpers can't
+		take care of each of those aspects perfectly. It's because of 
+		the way the services communicate and the data managment between 
+		them.
+
+Q5 : What consequences on the architecture ?
+
+		this is consequent for the team development that have to chose 
+		between consistency and availability of partitions. It result on
+		a system that would not work as they wish.
+
+Q6 : Provide an example of how microservices can enhance scalability in a cloud 
+	environment.
+
+		Using containers to deploy microservices, that can improve the
+		scalability in a cloud environment, is an example because they
+		can be scaled automatically depending on the ask of the users.
+
+Q7 : What is stateless and why is it important in microservices architecture ?
+
+		The stateless of a microservice means that no state is needed or
+		keep in the memory between all the requests. It is important
+		for scalability and resilience, because it allow each service to
+		manage requests.
+
+Q8 : What purposes does an API Gateway serve ?
+
+		An API Gateway serve is a gate between users and the system and 
+		send each request to the microservice conserned. It also deals 
+		with authification and the data flow.
